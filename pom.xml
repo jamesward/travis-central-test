@@ -5,7 +5,7 @@
     <packaging>jar</packaging>
     <groupId>com.jamesward</groupId>
     <artifactId>travis-central-test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Travis Central Test</name>
     <description>Travis Central Test</description>
     <url>http://jamesward.com</url>
@@ -98,7 +98,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <preparationGoals>replacer:replace</preparationGoals>
-                    <goals></goals>
+                    <goals />
                 </configuration>
             </plugin>
 
