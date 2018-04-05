@@ -98,6 +98,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <preparationGoals>replacer:replace</preparationGoals>
+                    <goals></goals>
                 </configuration>
             </plugin>
 
