@@ -5,7 +5,7 @@
     <packaging>jar</packaging>
     <groupId>com.jamesward</groupId>
     <artifactId>travis-central-test</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.7-SNAPSHOT</version>
     <name>Travis Central Test</name>
     <description>Travis Central Test</description>
     <url>http://jamesward.com</url>
