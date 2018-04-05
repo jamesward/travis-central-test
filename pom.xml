@@ -73,6 +73,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <preparationGoals>replacer:replace</preparationGoals>
+                    <arguments>-Dmaven.deploy.skip=true</arguments>
                 </configuration>
             </plugin>
 
@@ -82,7 +83,6 @@
                 <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <skipRemoteStaging>true</skipRemoteStaging>
                     <serverId>sonatype-nexus-staging</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
