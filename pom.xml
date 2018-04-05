@@ -68,20 +68,12 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.9.5</version>
-                <configuration>
-                    <includes>README.md</includes>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <preparationGoals>replacer:replace scm:add</preparationGoals>
+                    <preparationGoals>replacer:replace</preparationGoals>
+                    <pomFileName>pom.xml README.md</pomFileName>
                     <goals>verify</goals>
                 </configuration>
             </plugin>
