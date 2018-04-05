@@ -73,7 +73,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <preparationGoals>replacer:replace</preparationGoals>
-                    <goals>none</goals>
+                    <goals>verify</goals>
                 </configuration>
             </plugin>
 
