@@ -1,7 +1,7 @@
 language: java
 jdk: oraclejdk8
 
-before_script: ./.travis.gpg.sh
+before_install: ./.travis.gpg.sh
 
 deploy:
   provider: script
