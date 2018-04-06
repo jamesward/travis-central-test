@@ -1,3 +1,5 @@
+# On Travis set: SONATYPE_USERNAME, SONATYPE_PASSWORD, GPG_NAME, GPG_EMAIL
+
 language: java
 jdk: oraclejdk8
 
@@ -16,4 +18,7 @@ deploy:
   script: mvn --settings .travis.settings.xml clean deploy
   skip_cleanup: true
   on:
+    # deploy snapshots and tagged releases
     all_branches: true
+    # or to only deploy tagged releases (i.e. not snapshots)
+    #tags: true
