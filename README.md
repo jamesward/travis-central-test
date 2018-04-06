@@ -8,7 +8,7 @@ Get this library from Maven Central:
 <dependency>
     <groupId>com.jamesward</groupId>
     <artifactId>travis-central-test</artifactId>
-    <version>0.0.13</version>
+    <version>0.0.14</version>
 </dependency>
 ```
 
