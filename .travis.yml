@@ -15,3 +15,5 @@ deploy:
   provider: script
   script: mvn --settings .travis.settings.xml clean deploy
   skip_cleanup: true
+  on:
+    all_branches: true
