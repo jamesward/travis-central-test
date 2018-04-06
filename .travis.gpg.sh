@@ -5,8 +5,6 @@ set -e
 
 if [[ ! -z "$TRAVIS" && ! -z "$GPG_NAME" && ! -z "$GPG_EMAIL" ]]; then
 
-    echo "asdf"
-
     export GPG_PASSPHRASE=$(echo "$RANDOM$(date)" | md5sum | cut -d\  -f1)
 
     echo -e "%echo Generating a basic OpenPGP key" >> gen-key-script
