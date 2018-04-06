@@ -9,5 +9,5 @@ before_install: ./.travis.gpg.sh
 
 deploy:
   provider: script
-  script: mvn --settings .travis.settings.xml clean deploy
+  script: echo $GPG_PASSPHRASE && mvn --settings .travis.settings.xml clean deploy
   skip_cleanup: true
