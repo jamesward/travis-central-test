@@ -37,7 +37,6 @@
         <tag>HEAD</tag>
     </scm>
 
-    <!--
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-staging</id>
@@ -48,7 +47,6 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
-    -->
 
     <build>
         <plugins>
@@ -85,7 +83,7 @@
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <preparationGoals>replacer:replace scm:checkin</preparationGoals>
-                    <!--<goals>verify</goals>-->
+                    <goals>verify</goals>
                 </configuration>
             </plugin>
 
