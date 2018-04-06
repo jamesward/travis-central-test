@@ -7,6 +7,10 @@ cache:
 
 before_install: source .travis.gpg.sh
 
+install: mvn install -settings .travis.settings.xml -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script: mvn test --settings .travis.settings.xml -B
+
 deploy:
   provider: script
   script: mvn --settings .travis.settings.xml clean deploy
