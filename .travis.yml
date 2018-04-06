@@ -5,9 +5,9 @@ cache:
   directories:
   - $HOME/.m2
 
-before_install: ./.travis.gpg.sh
+before_install: ./.travis.gpg.sh && echo $GPG_PASSPHRASE
 
 deploy:
   provider: script
-  script: echo $GPG_PASSPHRASE && mvn --settings .travis.settings.xml clean deploy
+  script: mvn --settings .travis.settings.xml clean deploy
   skip_cleanup: true
