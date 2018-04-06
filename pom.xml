@@ -5,7 +5,7 @@
     <packaging>jar</packaging>
     <groupId>com.jamesward</groupId>
     <artifactId>travis-central-test</artifactId>
-    <version>0.0.12-SNAPSHOT</version>
+    <version>0.0.12</version>
     <name>Travis Central Test</name>
     <description>Travis Central Test</description>
     <url>http://jamesward.com</url>
@@ -34,7 +34,7 @@
         <url>http://github.com/jamesward/travis-central-test</url>
         <connection>scm:git:https://github.com/jamesward/travis-central-test.git</connection>
         <developerConnection>scm:git:https://github.com/jamesward/travis-central-test.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v0.0.12</tag>
     </scm>
 
     <distributionManagement>
