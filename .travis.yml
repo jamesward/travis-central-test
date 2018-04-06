@@ -1,7 +1,9 @@
 language: java
 jdk: oraclejdk8
 
+before_script: ./.travis.gpg.sh
+
 deploy:
   provider: script
-  script: "./.travis.gpg.sh && mvn --settings .travis.settings.xml clean deploy"
+  script: mvn --settings .travis.settings.xml clean deploy
   skip_cleanup: true
